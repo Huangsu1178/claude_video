@@ -1,0 +1,17 @@
+{
+  "output_name": "demo2_v2_en_viral.mp4",
+  "slots": [
+    {
+      "left":  { "title": "BEFORE", "lines": ["Regular guy dancing"] },
+      "right": { "title": "AFTER AI", "lines": ["Epic transformation!"] }
+    },
+    {
+      "title": "🔥 AI Dance Style Transfer",
+      "lines": ["Same moves · Different universe"]
+    },
+    {
+      "title": "Try it yourself!",
+      "lines": ["Drop a comment below 👇"]
+    }
+  ]
+}

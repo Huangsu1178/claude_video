@@ -1,0 +1,60 @@
+{
+  "video": "D:\\Videos\\claude_video\\subtitles\\projects\\faceswap\\source\\ab_compare_base.mp4",
+  "width": 1080,
+  "height": 1920,
+  "duration": 15.966667,
+  "fps": 30.0,
+  "has_audio": true,
+  "frames": [
+    {
+      "time_sec": 0.479,
+      "time_str": "00:00:00.479",
+      "path": "D:\\Videos\\claude_video\\subtitles\\projects\\faceswap\\analysis\\frame_01_0.48s.png"
+    },
+    {
+      "time_sec": 2.147,
+      "time_str": "00:00:02.147",
+      "path": "D:\\Videos\\claude_video\\subtitles\\projects\\faceswap\\analysis\\frame_02_2.15s.png"
+    },
+    {
+      "time_sec": 3.814,
+      "time_str": "00:00:03.814",
+      "path": "D:\\Videos\\claude_video\\subtitles\\projects\\faceswap\\analysis\\frame_03_3.81s.png"
+    },
+    {
+      "time_sec": 5.482,
+      "time_str": "00:00:05.482",
+      "path": "D:\\Videos\\claude_video\\subtitles\\projects\\faceswap\\analysis\\frame_04_5.48s.png"
+    },
+    {
+      "time_sec": 7.15,
+      "time_str": "00:00:07.150",
+      "path": "D:\\Videos\\claude_video\\subtitles\\projects\\faceswap\\analysis\\frame_05_7.15s.png"
+    },
+    {
+      "time_sec": 8.817,
+      "time_str": "00:00:08.817",
+      "path": "D:\\Videos\\claude_video\\subtitles\\projects\\faceswap\\analysis\\frame_06_8.82s.png"
+    },
+    {
+      "time_sec": 10.485,
+      "time_str": "00:00:10.485",
+      "path": "D:\\Videos\\claude_video\\subtitles\\projects\\faceswap\\analysis\\frame_07_10.48s.png"
+    },
+    {
+      "time_sec": 12.152,
+      "time_str": "00:00:12.152",
+      "path": "D:\\Videos\\claude_video\\subtitles\\projects\\faceswap\\analysis\\frame_08_12.15s.png"
+    },
+    {
+      "time_sec": 13.82,
+      "time_str": "00:00:13.820",
+      "path": "D:\\Videos\\claude_video\\subtitles\\projects\\faceswap\\analysis\\frame_09_13.82s.png"
+    },
+    {
+      "time_sec": 15.488,
+      "time_str": "00:00:15.488",
+      "path": "D:\\Videos\\claude_video\\subtitles\\projects\\faceswap\\analysis\\frame_10_15.49s.png"
+    }
+  ]
+}

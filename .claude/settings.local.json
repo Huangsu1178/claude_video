@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ffmpeg -version)",
+      "Bash(python -c \"import librosa, matplotlib, PIL, numpy; print\\('OK'\\)\")",
+      "Bash(python -c \"import PIL, pilmoji, requests; print\\('OK'\\)\")",
+      "Bash(python \"D:/Videos/claude_video/subtitles/project.py\" list)",
+      "Bash(ffprobe -v quiet -print_format json -show_streams -show_format D:/Videos/claude_video/video/in.mp4)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); vs=[s for s in d['streams'] if s['codec_type']=='video'][0]; print\\(f\\\\\"in.mp4: {vs['width']}x{vs['height']} @ {vs.get\\('r_frame_rate','?'\\)} fps, dur={d['format']['duration']}s\\\\\"\\)\")",
+      "Bash(ffprobe -v quiet -print_format json -show_streams -show_format D:/Videos/claude_video/video/out.mp4)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); vs=[s for s in d['streams'] if s['codec_type']=='video'][0]; print\\(f\\\\\"out.mp4: {vs['width']}x{vs['height']} @ {vs.get\\('r_frame_rate','?'\\)} fps, dur={d['format']['duration']}s\\\\\"\\)\")",
+      "Bash(mkdir -p D:/Videos/claude_video/edit/verify)",
+      "Bash(ffmpeg -ss 1 -i D:/Videos/claude_video/video/in.mp4 -frames:v 1 -q:v 2 D:/Videos/claude_video/edit/verify/in_01s.jpg -y -loglevel error)",
+      "Bash(ffmpeg -ss 8 -i D:/Videos/claude_video/video/in.mp4 -frames:v 1 -q:v 2 D:/Videos/claude_video/edit/verify/in_08s.jpg -y -loglevel error)",
+      "Bash(ffmpeg -ss 1 -i D:/Videos/claude_video/video/out.mp4 -frames:v 1 -q:v 2 D:/Videos/claude_video/edit/verify/out_01s.jpg -y -loglevel error)",
+      "Bash(ffmpeg -ss 8 -i D:/Videos/claude_video/video/out.mp4 -frames:v 1 -q:v 2 D:/Videos/claude_video/edit/verify/out_08s.jpg -y -loglevel error)",
+      "Bash(ffprobe -v quiet -print_format json -show_streams D:/Videos/claude_video/video/in.mp4)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); [print\\(s['codec_type'], s.get\\('codec_name','?'\\)\\) for s in d['streams']]\")",
+      "Bash(ffprobe -v quiet -print_format json -show_streams D:/Videos/claude_video/video/out.mp4)",
+      "Read(//c/Windows/Fonts/**)",
+      "Bash(mkdir -p D:/Videos/claude_video/edit)",
+      "Bash(ffmpeg -i video/in.mp4 -i video/out.mp4 -filter_complex ' *)",
+      "Bash(ffprobe -v quiet -print_format json -show_streams -show_format D:/Videos/claude_video/edit/ab_compare_base.mp4)",
+      "Bash(python3 -c ' *)",
+      "Bash(ffmpeg -ss 8 -i D:/Videos/claude_video/edit/ab_compare_base.mp4 -frames:v 1 -q:v 2 D:/Videos/claude_video/edit/verify/compare_08s.jpg -y -loglevel error)",
+      "Bash(python subtitles/project.py new faceswap)",
+      "Bash(python subtitles/project.py analyze faceswap)",
+      "Bash(python subtitles/project.py run faceswap)"
+    ]
+  }
+}

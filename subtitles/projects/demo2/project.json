@@ -1,0 +1,10 @@
+{
+  "font_path": "",
+  "cjk_font_path": "",
+  "font_size": 48,
+  "title_size": 0,
+  "stroke_width": 5,
+  "line_gap": 12,
+  "preset": "fast",
+  "crf": 18
+}

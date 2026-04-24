@@ -1,0 +1,17 @@
+{
+  "output_name": "demo2_v3_bilingual.mp4",
+  "slots": [
+    {
+      "left":  { "title": "输入 / INPUT", "lines": ["西装男 · 客厅环境"] },
+      "right": { "title": "输出 / OUTPUT", "lines": ["游戏角色 · 主题场景"] }
+    },
+    {
+      "title": "AI 以假乱真 · AI Fools the Eye",
+      "lines": ["动作同步精度 95%+ · 95%+ Motion Accuracy"]
+    },
+    {
+      "title": "你也来试试 / Try It Now",
+      "lines": ["评论区留言 👇 · Comment Below 👇"]
+    }
+  ]
+}

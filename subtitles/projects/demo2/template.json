@@ -1,0 +1,44 @@
+{
+  "video": "2.mp4",
+  "config": {
+    "font_size": 76,
+    "title_size": 88,
+    "stroke_width": 7,
+    "line_gap": 16
+  },
+  "slots": [
+    {
+      "id": 1,
+      "type": "double",
+      "start": 0.4,
+      "end": 4.8,
+      "y": "4%",
+      "sample": {
+        "left":  { "title": "原始输入:", "lines": ["真实跳舞动作"] },
+        "right": { "title": "AI 输出:",  "lines": ["风格迁移结果"] }
+      }
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "start": 4.8,
+      "end": 9.8,
+      "y": "4%",
+      "sample": {
+        "title": "✨ AI 动作风格迁移",
+        "lines": ["实时识别动作 · 智能映射目标角色"]
+      }
+    },
+    {
+      "id": 3,
+      "type": "single",
+      "start": 9.8,
+      "end": 13.6,
+      "y": "4%",
+      "sample": {
+        "title": "效果太绝了！",
+        "lines": ["关注获取更多 AI 视频 👇"]
+      }
+    }
+  ]
+}

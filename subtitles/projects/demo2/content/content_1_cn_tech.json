@@ -1,0 +1,17 @@
+{
+  "output_name": "demo2_v1_cn_tech.mp4",
+  "slots": [
+    {
+      "left":  { "title": "🎥 原始输入", "lines": ["真人动作捕捉"] },
+      "right": { "title": "🤖 AI 输出",  "lines": ["风格迁移渲染"] }
+    },
+    {
+      "title": "✨ AI 动作风格迁移技术",
+      "lines": ["实时识别人体关键点 · 智能映射目标角色"]
+    },
+    {
+      "title": "🔥 只需上传一段舞蹈视频",
+      "lines": ["AI 自动生成同款动作！"]
+    }
+  ]
+}

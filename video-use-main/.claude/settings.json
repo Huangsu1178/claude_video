@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"C:\\\\Program Files\" -Recurse -Filter \"ffmpeg.exe\" -ErrorAction SilentlyContinue | Select-Object -First 3 FullName; Get-ChildItem \"$env:LOCALAPPDATA\" -Recurse -Filter \"ffmpeg.exe\" -ErrorAction SilentlyContinue | Select-Object -First 3 FullName)",
+      "Read(//c/Users/25149/AppData/Local/Microsoft/WinGet/Packages/**)",
+      "Read(//c/ProgramData/Microsoft/Windows/Start Menu/**)",
+      "Read(//c/Program Files/**)",
+      "PowerShell($env:PATH -split ';' | Where-Object { $_ -match 'ffmpeg|gyan' } | Select-Object -First 5; winget show Gyan.FFmpeg 2>&1 | Select-String \"Location|Install\")",
+      "Read(//c/Users/25149/AppData/Local/Microsoft/WinGet/**)",
+      "Read(//c/Users/25149/**)",
+      "PowerShell(scoop --version 2>&1)",
+      "PowerShell(choco --version 2>&1)",
+      "PowerShell(choco install ffmpeg --yes 2>&1)",
+      "Read(//c/ProgramData/chocolatey/bin/**)",
+      "PowerShell(Get-ChildItem \"C:\\\\ProgramData\\\\chocolatey\\\\bin\" -ErrorAction SilentlyContinue | Where-Object {$_.Name -match \"ff\"} | Select-Object Name)",
+      "PowerShell(Get-ChildItem \"$env:LOCALAPPDATA\\\\Programs\" -Recurse -Depth 4 -Filter \"ffmpeg.exe\" -ErrorAction SilentlyContinue | Select-Object FullName; Get-ChildItem \"C:\\\\tools\" -Recurse -Filter \"ffmpeg.exe\" -ErrorAction SilentlyContinue | Select-Object FullName)"
+    ],
+    "additionalDirectories": [
+      "C:\\ProgramData\\chocolatey\\lib"
+    ]
+  }
+}

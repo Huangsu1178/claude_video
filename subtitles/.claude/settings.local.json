@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ffprobe -v quiet -print_format json -show_streams -show_format \"D:/Videos/2/demo.mp4\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); v=[s for s in d['streams'] if s['codec_type']=='video'][0]; print\\(f\\\\\"分辨率: {v['width']}x{v['height']}\\\\nFPS: {v.get\\('r_frame_rate','?'\\)}\\\\n时长: {d['format'].get\\('duration','?'\\)}s\\\\\"\\)\")",
+      "Bash(ffprobe -v quiet -print_format json -show_streams -select_streams v:0 \"D:/Videos/2/demo.mp4\")",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); s=d['streams'][0]; print\\(f\\\\\"分辨率: {s['width']}x{s['height']}\\\\nFPS: {s['r_frame_rate']}\\\\n时长: {s.get\\('duration','unknown'\\)}s\\\\\"\\)\")",
+      "Bash(python -c \"import PIL; print\\('Pillow:', PIL.__version__\\)\")",
+      "Bash(python -c \"import pilmoji; print\\('pilmoji OK'\\)\")",
+      "Read(//c/Windows/Fonts/**)",
+      "Bash(python add_subtitles.py demo.mp4 example_single.json example_double.json -o output/)",
+      "Bash(ffmpeg -i \"D:/Videos/2/output/demo_single.mp4\" -vf \"select=eq\\(n\\\\,30\\)\" -frames:v 1 \"D:/Videos/2/output/preview_single.png\" -y)",
+      "Bash(ffmpeg -i \"D:/Videos/2/output/demo_double.mp4\" -vf \"select=eq\\(n\\\\,30\\)\" -frames:v 1 \"D:/Videos/2/output/preview_double.png\" -y)",
+      "Bash(python analyze_video.py demo.mp4 --frames 8)",
+      "Bash(python add_subtitles.py demo.mp4 --template template.json content_v1.json content_v2.json -o output/)",
+      "Bash(ffmpeg -i \"D:/Videos/2/output/video_v1.mp4\" -vf \"select=eq\\(n\\\\,45\\)\" -frames:v 1 -update 1 \"D:/Videos/2/output/prev_v1_slot1.png\" -y)",
+      "Bash(ffmpeg -i \"D:/Videos/2/output/video_v1.mp4\" -vf \"select=eq\\(n\\\\,180\\)\" -frames:v 1 -update 1 \"D:/Videos/2/output/prev_v1_slot2.png\" -y)",
+      "Bash(ffmpeg -i \"D:/Videos/2/output/video_v2.mp4\" -vf \"select=eq\\(n\\\\,45\\)\" -frames:v 1 -update 1 \"D:/Videos/2/output/prev_v2_slot1.png\" -y)",
+      "Bash(ffmpeg -i \"D:/Videos/2/output/video_v2.mp4\" -vf \"select=eq\\(n\\\\,180\\)\" -frames:v 1 -update 1 \"D:/Videos/2/output/prev_v2_slot2.png\" -y)",
+      "Bash(ffmpeg -i \"D:/Videos/2/output/video_v2.mp4\" -vf \"select=eq\\(n\\\\,45\\)\" -frames:v 1 -update 1 \"D:/Videos/2/output/prev_v2_fixed.png\" -y)",
+      "Bash(ffmpeg -i \"D:/Videos/2/output/video_v2.mp4\" -vf \"select=eq\\(n\\\\,180\\)\" -frames:v 1 -update 1 \"D:/Videos/2/output/prev_v2_fixed2.png\" -y)",
+      "Bash(pip install *)",
+      "Bash(python *)",
+      "Bash(ffmpeg -i \"D:/Videos/2/output/video_v1.mp4\" -vf \"select=eq\\(n\\\\,45\\)\" -frames:v 1 -update 1 \"D:/Videos/2/output/emoji_v1_slot1.png\" -y)",
+      "Bash(ffmpeg -i \"D:/Videos/2/output/video_v1.mp4\" -vf \"select=eq\\(n\\\\,180\\)\" -frames:v 1 -update 1 \"D:/Videos/2/output/emoji_v1_slot2.png\" -y)",
+      "Bash(ffmpeg -i \"D:/Videos/2/output/video_v2.mp4\" -vf \"select=eq\\(n\\\\,45\\)\" -frames:v 1 -update 1 \"D:/Videos/2/output/emoji_v2_slot1.png\" -y)",
+      "Bash(ffmpeg -i \"D:/Videos/2/output/video_v2.mp4\" -vf \"select=eq\\(n\\\\,180\\)\" -frames:v 1 -update 1 \"D:/Videos/2/output/emoji_v2_slot2.png\" -y)",
+      "Bash(ffmpeg -i \"D:/Videos/2/projects/demo_ai_motion/output/video_v1.mp4\" -vf \"select=eq\\(n\\\\,45\\)\" -frames:v 1 -update 1 \"D:/Videos/2/projects/demo_ai_motion/output/preview.png\" -y)",
+      "Bash(ffmpeg -i \"D:/Videos/2/projects/demo_ai_motion/output/video_v1.mp4\" -vf \"select=eq\\(n\\\\,45\\)\" -frames:v 1 -update 1 \"D:/Videos/2/projects/demo_ai_motion/output/preview2.png\" -y)",
+      "Bash(ffmpeg -i \"D:/Videos/2/projects/demo_ai_motion/output/video_v2.mp4\" -vf \"select=eq\\(n\\\\,180\\)\" -frames:v 1 -update 1 \"D:/Videos/2/projects/demo_ai_motion/output/preview2b.png\" -y)",
+      "Bash(dir \"D:\\\\Videos\\\\2\")",
+      "Bash(ffprobe -v quiet -print_format json -show_format -show_streams \"D:\\\\Videos\\\\2\\\\projects\\\\demo2\\\\source\\\\2.mp4\")"
+    ]
+  }
+}

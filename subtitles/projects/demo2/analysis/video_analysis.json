@@ -1,0 +1,50 @@
+{
+  "video": "D:\\Videos\\2\\projects\\demo2\\source\\2.mp4",
+  "width": 2160,
+  "height": 1920,
+  "duration": 13.885011,
+  "fps": 30.0,
+  "has_audio": true,
+  "frames": [
+    {
+      "time_sec": 0.417,
+      "time_str": "00:00:00.417",
+      "path": "D:\\Videos\\2\\projects\\demo2\\analysis\\frame_01_0.42s.png"
+    },
+    {
+      "time_sec": 2.281,
+      "time_str": "00:00:02.281",
+      "path": "D:\\Videos\\2\\projects\\demo2\\analysis\\frame_02_2.28s.png"
+    },
+    {
+      "time_sec": 4.146,
+      "time_str": "00:00:04.146",
+      "path": "D:\\Videos\\2\\projects\\demo2\\analysis\\frame_03_4.15s.png"
+    },
+    {
+      "time_sec": 6.01,
+      "time_str": "00:00:06.010",
+      "path": "D:\\Videos\\2\\projects\\demo2\\analysis\\frame_04_6.01s.png"
+    },
+    {
+      "time_sec": 7.875,
+      "time_str": "00:00:07.875",
+      "path": "D:\\Videos\\2\\projects\\demo2\\analysis\\frame_05_7.88s.png"
+    },
+    {
+      "time_sec": 9.739,
+      "time_str": "00:00:09.739",
+      "path": "D:\\Videos\\2\\projects\\demo2\\analysis\\frame_06_9.74s.png"
+    },
+    {
+      "time_sec": 11.604,
+      "time_str": "00:00:11.604",
+      "path": "D:\\Videos\\2\\projects\\demo2\\analysis\\frame_07_11.60s.png"
+    },
+    {
+      "time_sec": 13.468,
+      "time_str": "00:00:13.468",
+      "path": "D:\\Videos\\2\\projects\\demo2\\analysis\\frame_08_13.47s.png"
+    }
+  ]
+}

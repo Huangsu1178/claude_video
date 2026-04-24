@@ -1,0 +1,72 @@
+{
+  "video": "ab_compare_base.mp4",
+  "config": {
+    "font_size": 50,
+    "title_size": 54,
+    "stroke_width": 6,
+    "line_gap": 14
+  },
+  "slots": [
+    {
+      "id": 1,
+      "type": "single",
+      "start": 0.5,
+      "end": 3.8,
+      "y": "68%",
+      "sample": {
+        "title": "🤖 AI换脸黑科技",
+        "lines": ["同一个身体，两张不同的脸"]
+      }
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "start": 3.8,
+      "end": 7.0,
+      "y": "68%",
+      "sample": {
+        "title": "💡 工作原理：",
+        "lines": ["深度学习提取人脸特征", "实时重建面部纹理与光影"]
+      }
+    },
+    {
+      "id": 3,
+      "type": "single",
+      "start": 7.0,
+      "end": 10.0,
+      "y": "68%",
+      "sample": {
+        "title": "✅ 技术亮点：",
+        "lines": ["体型 / 服装 / 动作完全保留", "换脸边缘自然融合，无破绽"]
+      }
+    },
+    {
+      "id": 4,
+      "type": "double",
+      "start": 10.0,
+      "end": 13.5,
+      "y": "68%",
+      "sample": {
+        "left": {
+          "title": "📷 左：原版",
+          "lines": ["真实拍摄素材"]
+        },
+        "right": {
+          "title": "🤖 右：AI换脸",
+          "lines": ["实时人脸替换"]
+        }
+      }
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "start": 13.5,
+      "end": 15.8,
+      "y": "68%",
+      "sample": {
+        "title": "👉 关注我",
+        "lines": ["更多AI黑科技持续更新中～"]
+      }
+    }
+  ]
+}
