@@ -1,0 +1,22 @@
+{
+  "video": "in.mp4",
+  "config": {
+    "font_size": 64,
+    "title_size": 0,
+    "stroke_width": 6,
+    "line_gap": 14
+  },
+  "slots": [
+    {
+      "id": 1,
+      "type": "single",
+      "start": 0.5,
+      "end": 15.5,
+      "y": "8%",
+      "sample": {
+        "title": "",
+        "lines": ["今天天气很好"]
+      }
+    }
+  ]
+}

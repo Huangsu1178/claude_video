@@ -146,6 +146,10 @@ def load_font(font_path: str, size: int) -> ImageFont.FreeTypeFont:
         "C:/Windows/Fonts/impact.ttf",
         "C:/Windows/Fonts/arialbd.ttf",
         "C:/Windows/Fonts/calibrib.ttf",
+        "/System/Library/Fonts/Supplemental/Impact.ttf",
+        "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+        "/Library/Fonts/Arial Unicode.ttf",
+        "/System/Library/Fonts/Helvetica.ttc",
     ]:
         f = _try_font(candidate, size)
         if f:
@@ -163,6 +167,12 @@ def load_cjk_font(cjk_font_path: str, size: int):
         "C:/Windows/Fonts/msyh.ttc",     # 微软雅黑
         "C:/Windows/Fonts/simhei.ttf",   # 黑体
         "C:/Windows/Fonts/simsun.ttc",   # 宋体
+        "/System/Library/Fonts/PingFang.ttc",          # macOS 苹方
+        "/System/Library/Fonts/STHeiti Medium.ttc",    # macOS 黑体-简
+        "/System/Library/Fonts/STHeiti Light.ttc",
+        "/System/Library/Fonts/Hiragino Sans GB.ttc",  # 冬青黑体
+        "/System/Library/Fonts/Songti.ttc",            # 宋体
+        "/Library/Fonts/Arial Unicode.ttf",
     ]:
         f = _try_font(candidate, size)
         if f:
